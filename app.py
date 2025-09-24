@@ -6,7 +6,7 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
-@app.route("/counting", method=["GET", "POST"])
+@app.route("/counting", methods=["GET", "POST"])
 def counting():
     sentence = request.form.get("sentence")
 

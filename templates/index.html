@@ -1,8 +1,8 @@
-{% extends "layout.html %}
+{% extends "layout.html" %}
 
 {% block body %}
-<form action="/counting" method="post">
-    <input autocomplete="off" autofocus name="sentence" placeholder="Your String"  required type="text">
-    <button type="submit">Submit</button>
-</form>
+    <form action="/counting" method="post">
+        <input type="text" name="sentence" placeholder="Type here..." />
+        <input type="submit" value="Count" />
+    </form>
 {% endblock %}
